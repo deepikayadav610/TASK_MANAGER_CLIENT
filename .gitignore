@@ -1,20 +1,24 @@
 # Flutter/Dart related files
 **/build/
-**/android/.gradle/
-**/android/app/debug/
-**/android/app/profile/
-**/android/app/release/
-**/ios/Pods/
-**/ios/.generated/
 **/.dart_tool/
 **/.packages
 **/.flutter-plugins
 **/.flutter-plugins-dependencies
+
+# IDE specific files
 **/.idea/
 **/.vscode/
 
-# Xcode related files
+# Android related files
+**/android/.gradle/
+**/android/local.properties
+**/android/key.properties
+**/android/app/google-services.json  # Firebase config
+
+# iOS related files
+**/ios/Pods/
 **/ios/.symlinks/
+**/ios/.generated/
 **/ios/Flutter/.last_build_id
 **/ios/Flutter/Flutter.podspec
 **/ios/Runner.xcworkspace/
@@ -22,21 +26,7 @@
 **/ios/Runner.xcodeproj/xcuserdata/
 **/ios/Runner.xcodeproj/xcshareddata/
 **/ios/Flutter/ephemeral/
-
-# Android related files
-**/android/local.properties
-**/android/app/google-services.json
-**/android/key.properties
-
-# Debug and release related files
-*.log
-*.lock
-pubspec.lock
-
-# Dart compilation cache
-.dart_tool/
-.buildlog/
-.dart_tool_version
+**/ios/Flutter/flutter_export_environment.sh
 
 # Web related files
 **/web/.dart_tool/
@@ -44,13 +34,20 @@ pubspec.lock
 **/web/.firebase/
 **/web/generated_plugin_registrant.dart
 
+# Debug, release, and lock files
+*.log
+*.lock
+pubspec.lock
+.buildlog/
+.dart_tool_version
+
 # Firebase and credentials
 firebase.json
-.env
+.env  # Environment files
 
-# User-specific files
+# macOS specific files
 **/.DS_Store
-**/.vscode/
-**/.idea/
+
+# Miscellaneous
 **/.metadata
 **/.gradle/
